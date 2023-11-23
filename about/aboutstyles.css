@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(37, 37, 37);
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header {
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 3rem;
+    background-image: url("../images/gold.jpg");
+    background-size: 200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:rgb(0, 0, 0, 0);
+    text-shadow: 10px 10px 5px rgba(255, 217, 0, 0.2);
+}
+main hr {
+    border: 2px solid gold;
+}
+.content, .credits {
+    margin: 2rem 1rem;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#cookie-clicker {
+    color: lightblue;
+}
+#cookie-clicker:hover {
+    color: gold;
+}
+#cookie-clicker:active {
+    text-shadow: 0px 0px 5px gold;
+}
+.credits a {
+    display: block;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: gold;
+}
+.credits a:hover {
+    text-decoration: underline;
+}

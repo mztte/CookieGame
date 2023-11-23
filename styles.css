@@ -1,0 +1,274 @@
+/* Arima Madurai */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap');
+/* Share Tech Mono */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+:root {
+    --clicker-btn-margin: 25px;
+    --active-clr: rgb(217, 255, 0);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background-image: url(images/dark-honeycomb.png); /* Background pattern from Toptal Subtle Patterns (Check Credits on About Page)*/
+    background-repeat: repeat;
+}
+main {
+    height: 100vh;
+    position: relative;
+}
+.version { color: white; }
+.main-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clicker-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop {
+    font-family: 'Arima Madurai', sans-serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 10vh;
+    border-left: 15px solid rgb(36, 36, 36);
+}
+/* sub shop 1 and 2 */
+.sub-shop {
+    display: block;
+    overflow: scroll;
+    height: 80%;
+    width: 80%;
+    max-width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 10px black;
+}
+.sub-shop-2 {
+    display: none;
+    overflow: scroll;
+    height: 80%;
+    width: 80%;
+    max-width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 10px black;
+}
+/* sub shop 3 stuff */
+.sub-shop-3 {
+    display: none;
+    overflow: scroll;
+    height: 80%;
+    width: 80%;
+    max-width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 10px black;
+}
+.sub-shop-3 input[type="text"] {
+    background-color: black;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid rgb(97, 97, 97);
+    text-transform: uppercase;
+    height: 10vh;
+}
+.sub-shop-3 input[type="text"]:focus {
+    outline: none;
+    transition: border-color 300ms linear;
+    border-color: rgb(219, 38, 77);;
+    animation: rotateColors 3s linear infinite;
+    animation-delay: 300ms;
+}
+@keyframes rotateColors {
+    0% { border-color:rgb(219, 38, 77); }
+    10% { border-color:rgb(218, 51, 0); }
+    25% { border-color: rgb(255, 173, 20); }
+    40% { border-color: rgb(239, 255, 18); }
+    60% { border-color: rgb(18, 255, 18); }
+    75% { border-color: rgb(3, 168, 218); }
+    90% { border-color: rgb(255, 18, 223); }
+}
+.redeem {
+    text-align: center;
+    color: white;
+}
+.redeem h3 {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+.redeem p {
+    margin-top: 5vh;
+    font-size: 1.5rem;
+}
+.shop h2 {
+    color: gold;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 3vh;
+}
+.switch-shop-btn {
+    border: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    margin: 10px;
+    background: none;
+    color: white;
+}
+.switch-shop-btn:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 10px white;
+}
+.shop p > button {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    box-shadow: 0px 0px 2px white;
+    border-radius: 5px;
+}
+.shop p  {
+    display: block;
+    margin-bottom: 3vh;
+}
+.shop p > button:hover {
+    transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    color: gold;
+    border-color: gold;
+    cursor: pointer;
+}
+.shop p > button:active {
+    transition: all 10ms linear;
+    -webkit-transition: all 10ms ease-in;
+    -moz-transition: all 10ms ease-in;
+    color: var(--active-clr);
+    border: 1px solid var(--active-clr);
+    box-shadow: 0px 0px 3px 2px var(--active-clr),
+                inset 0px 0px 3px 0px var(--active-clr);
+}
+.shop .price {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+}
+.shop .amount {
+    color: white;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 1.2rem;
+    text-align: right;
+}
+/*shop 2 items (sub-shop-2 is above) */
+.shop img  {
+    width: 40px;
+}
+/*modify cookie since its automatically owned JS is not needed*/
+#cookie-price {
+    text-shadow: 0px 0px 10px white;
+}
+#cookie-amount {
+    text-shadow: 0px 0px 10px gold;
+    color: gold;
+}
+/* clicker img */
+.clicker-item input[type="image"] {
+    width: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.clicker-item input[type="image"]:hover {
+    cursor: pointer;
+}
+.clicker-item input[type="image"]:active {
+    width: 150px;
+    margin-top: var(--clicker-btn-margin); /*makes up for size lost */
+    margin-bottom: var(--clicker-btn-margin);
+}
+#clicker-counter, #cps {
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+}
+#clicker-counter {
+    font-size: 1.7rem;
+}
+.save-load-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0.5rem;
+}
+.save-load-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 5px;
+    position: relative;
+    transition: color 300ms linear;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+}
+.save-load-container button:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    border-top: 2px solid rgb(0, 183, 255);
+}
+.save-load-container button:active {
+    transition: none;
+    color: rgb(57, 255, 57);
+    border-top: 2px solid rgb(57, 255, 57);
+}
+.version {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin-left: 0.2rem;
+}
+
+@keyframes rainbowText {
+    16% { color:rgb(218, 51, 0); }
+    32% { color: rgb(255, 173, 20); }
+    48% { color: rgb(239, 255, 18); }
+    64% { color: rgb(18, 255, 18); }
+    80% { color: rgb(3, 168, 218); }
+    96% { color: rgb(255, 18, 223); }
+}
+/* Didn't work as intened, just used audio instead */
+/* #rick {
+    display: none;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 25vh;
+    left: 25vw;
+    box-shadow: 0px 0px 300px 40px black;
+} */

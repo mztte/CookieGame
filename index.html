@@ -1,0 +1,142 @@
+<!-- author: matt briggs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navstyles.css" />
+    <!-- <link rel="shortcut icon" href="favicon/favicon.ico" /> -->
+    <link rel="icon" type="image/gif" href="images/cookie.svg">
+
+    <script defer src="script.js"></script>
+    <title>Cookie Game</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="saves" id="current-page" href="#" >Play</a></li>
+            <li><a href="patch/patch.html" class="saves color-effect">Patch Notes</a></li>
+            <li><a href="about/about.html" class="saves color-effect">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content">
+            <div class="clicker-container">
+                <div class="cps-counter">
+                    <p id="cps" class="color-effect">0.0cps x1</p>
+                </div>
+                <div class="clicker-item">
+                    <input type="image" src="images/cookie.svg" id="clicker-btn" name="clicker-btn" >
+                </div>
+                <div class="counter">
+                    <p id="clicker-counter" class='color-effect'>0C</p>
+                </div>
+            </div>
+            <div class="shop">
+                <h2 class="color-effect"><button class="switch-shop-btn" id="previous-shop-btn">&lt;&lt;</button>Shop <button class="switch-shop-btn" id="next-shop-btn">&gt;&gt;</button></h2>
+                <div class="sub-shop" id="sub-shop">
+                    <div id="click-power">
+                        <p><button>2x Click Power</button> <span class="price" id="click-power-price">Price: 250C</span><span class="amount" id="click-power-amount">0</span></p>
+                    </div>
+                    <div id="cps-power">
+                        <p><button>2x CPS Power</button> <span class="price" id="cps-power-price">Price: 1,500C</span><span class="amount" id="cps-power-amount">0</span></p>
+                    </div>
+                    <div id="item1">
+                        <p><button>Add 0.1cps</button> <span class="price" id="item-1-price">Price: 2C</span><span class="amount" id="item-1-amount">0</span></p>
+                    </div>
+                    <div id="item2">
+                        <p><button>Add 0.5cps</button> <span class="price" id="item-2-price">Price: 50C</span><span class="amount" id="item-2-amount">0</span></p>
+                    </div>
+                    <div id="item3">
+                        <p><button>Add 1.0cps</button> <span class="price" id="item-3-price">Price: 300C</span><span class="amount" id="item-3-amount">0</span></p>
+                    </div>
+                    <div id="item4">
+                        <p><button>Add 5.0cps</button> <span class="price" id="item-4-price">Price: 1,000C</span><span class="amount" id="item-4-amount">0</span></p>
+                    </div>
+                    <div id="item5">
+                        <p><button>Add 10cps</button> <span class="price" id="item-5-price">Price: 3,000C</span><span class="amount" id="item-5-amount">0</span></p>
+                    </div>
+                    <div id="item6">
+                        <p><button>Add 25cps</button> <span class="price" id="item-6-price">Price: 12,000C</span><span class="amount" id="item-6-amount">0</span></p>
+                    </div>
+                    <div id="item7">
+                        <p><button>Add 50cps</button> <span class="price" id="item-7-price">Price: 45,000C</span><span class="amount" id="item-7-amount">0</span></p>
+                    </div>
+                    <div id="item8">
+                        <p><button>Add 100cps</button> <span class="price" id="item-8-price">Price: 100,000C</span><span class="amount" id="item-8-amount">0</span></p>
+                    </div>
+                    <div id="item9">
+                        <p><button>Add 250cps</button> <span class="price" id="item-9-price">Price: 750,000C</span><span class="amount" id="item-9-amount">0</span></p>
+                    </div>
+                    <div id="item10">
+                        <p><button>Add 1,000cps</button> <span class="price" id="item-10-price">Price: 2,600,000C</span><span class="amount" id="item-10-amount">0</span></p>
+                    </div>
+                    <div id="item11">
+                        <p><button>Add 3,000cps</button> <span class="price" id="item-11-price">Price: 8,808,808C</span><span class="amount" id="item-11-amount">0</span></p>
+                    </div>
+                    <div id="item12">
+                        <p><button>Add 10,000cps</button> <span class="price" id="item-12-price">Price: 77,777,777C</span><span class="amount" id="item-12-amount">0</span></p>
+                    </div>
+                    <div id="item13">
+                        <p><button>Add 20,000cps</button> <span class="price" id="item-13-price">Price: 120,000,000C</span><span class="amount" id="item-13-amount">0</span></p>
+                    </div>
+                    <div id="item14">
+                        <p><button>Add 40,000cps</button> <span class="price" id="item-14-price">Price: 450,000,000C</span><span class="amount" id="item-14-amount">0</span></p>
+                    </div>
+                    <div id="item15">
+                        <p><button>Add 100,000cps</button> <span class="price" id="item-15-price">Price: 1,000,000,000C</span><span class="amount" id="item-15-amount">0</span></p>
+                    </div>
+                    <div id="item16">
+                        <p><button>Add 275,000cps</button> <span class="price" id="item-16-price">Price: 5,000,000,000C</span><span class="amount" id="item-16-amount">0</span></p>
+                    </div>
+                </div>
+                <div class="sub-shop-2" id="sub-shop-2">
+                    <div id="cookie">
+                        <p><button><img src="images/cookie.svg"  /></button> <span class="price" id="cookie-price">OWNED</span><span class="amount" id="cookie-amount">1</span></p>
+                    </div>
+                    <div id="carrot">
+                        <p><button><img src="images/carrot.svg"  /></button> <span class="price" id="carrot-price">Price: 50,000C</span><span class="amount" id="carrot-amount">0</span></p>
+                    </div>
+                    <div id="taco">
+                        <p><button><img src="images/taco.svg"  /></button> <span class="price" id="taco-price">Price: 350,000C</span><span class="amount" id="taco-amount">0</span></p>
+                    </div>
+                    <div id="cupcake">
+                        <p><button><img src="images/cupcake.svg"  /></button> <span class="price" id="cupcake-price">Price 7,500,000C</span><span class="amount" id="cupcake-amount">0</span></p>
+                    </div>
+                    <div id="duck">
+                        <p><button><img src="images/duck.svg"  /></button> <span class="price" id="duck-price">Price: 100,000,000C</span><span class="amount" id="duck-amount">0</span></p>
+                    </div>
+                    <div id="unicorn">
+                        <p><button><img id="unicorn-icon" src="images/question-mark.svg" /></button><span class="price" id="unicorn-price">Price: ??????</span><span class="amount" id="unicorn-amount">0</span></p>
+                    </div>
+                    
+                </div>
+                <div class="sub-shop-3" id="sub-shop-3">
+                    <div class="redeem">
+                        <h3>Redeem Code</h3>
+                        <input id="redeem-code" type="text" placeholder="Enter Code Here" autocomplete="off"/>
+                        <p id="redeem-text">Hmm, I wonder... What could get you some free cookies?</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="save-load-container">
+            <button id="save-btn" class="saves color-effect">Save</button>
+            <!-- <button id="load-btn">Load</button> -->
+            <button id="clear-data" class="color-effect">Delete Data</button>
+            <button id="bg-music" class="color-effect">BG Music on / off</button>
+        </div>
+        <div class="version">
+            <p class="color-effect">version: 1.0.7</p>
+        </div>
+        <!-- Didn't work as intended, just used audio instead -->
+        <!-- <iframe id="rick" src="https://archive.org/embed/Rick_Astley_Never_Gonna_Give_You_Up" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
+    </main>
+    <!-- rick roll - played when correct code is applied-->
+    <audio src="av/rickroll.mp4" id="rick"></audio>
+    <audio src="av/rickroll_lofi.mp3" id="rick-lofi"></audio>
+    <audio src="av/rickroll_lofi_trimmed.mp3" id="rick-lofi-trimmed" loop></audio>
+</body>
+</html>
